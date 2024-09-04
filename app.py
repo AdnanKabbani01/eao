@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for cross-origin requests
 
 # Initialize OpenAI client
-openai.api_key = 'api_keys'  # Ideally, store this in environment variables
+openai.api_key = api_keys
 
 def generate_vba_code(user_command):
     """
